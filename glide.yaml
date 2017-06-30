@@ -1,0 +1,6 @@
+package: yukari-line-bot
+import:
+- package: github.com/PuerkitoBio/goquery
+- package: github.com/andybalholm/cascadia
+- package: github.com/mattn/go-sqlite3
+- package: github.com/line/line-bot-sdk-go/linebot
