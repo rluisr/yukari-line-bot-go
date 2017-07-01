@@ -60,7 +60,8 @@ func StartServer() {
 			case linebot.EventTypeMessage:
 				m.RecieveMessage(event.Message)
 			case linebot.EventTypeFollow:
-				m.RecieveFollow(userId, event)
+				m.RecieveFollow(userId)
+				bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage(c.FOLLOW_MSG)).Do()
 			case linebot.EventTypeUnfollow:
 				m.RecieveUnfollow(userId)
 			}

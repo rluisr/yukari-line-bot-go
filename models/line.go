@@ -40,9 +40,8 @@ func RecieveMessage(msg linebot.Message) {
 
 // # 友達登録されたときに呼び出される
 // # ===========================
-func RecieveFollow(userId string, event *linebot.Event) {
+func RecieveFollow(userId string) {
 	l.InsertUserToDB("Users", userId)
-	CreateInstance().ReplyMessage(event.ReplyToken, linebot.NewTextMessage(c.FOLLOW_MSG)).Do()
 }
 
 // # ブロックされたときに呼び出される
