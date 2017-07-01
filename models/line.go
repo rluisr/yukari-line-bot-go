@@ -9,7 +9,7 @@ import (
 	l "github.com/rluisr/yukari-line-bot-go/libs"
 )
 
-func CreateInstance() (*linebot.Client){
+func CreateInstance() (*linebot.Client) {
 	bot, err := linebot.New(
 		c.CHANNEL_SECRET,
 		c.CHANNEL_TOKEN,
@@ -27,8 +27,9 @@ func PushMessage(msg string) {
 	users := l.GetUsers()
 
 	for _, userId := range users {
-		if _, err := bot.PushMessage(userId,linebot.NewTextMessage(msg)).Do(); err != nil {
-			panic(err)
+		if _, err := bot.PushMessage(userId, linebot.NewTextMessage(msg)).Do(); err != nil {
+			// 友だち追加してない場合エラーがでる
+			// あえて何もしない
 		}
 	}
 }
