@@ -2,7 +2,7 @@ package conf
 
 import "os"
 
-var CHANNEL_SECRET string = os.Getenv("LINE_CHNNEL_SECRET")
+var CHANNEL_SECRET string = os.Getenv("LINE_CHANNEL_SECRET")
 var CHANNEL_TOKEN string = os.Getenv("LINE_CHANNEL_TOKEN")
 var FOLLOW_MSG string = "登録ありがとうございます 􀄃􀆰3 hearts􏿿\n\n・田村ゆかり公式サイト\n・ファンクラブサイト\nの更新をお知らせ致します􀐂􀄝light bulb􏿿\n\nなお、当アカウントをブロックすることで利用の停止ができます 􀄃􀆐content􏿿"
 
