@@ -3,7 +3,7 @@ package models
 import (
 	"github.com/PuerkitoBio/goquery"
 
-	l "../libs"
+	l "github.com/rluisr/yukari-line-bot-go/libs"
 )
 
 var HPURL = "http://www.tamurayukari.com/"

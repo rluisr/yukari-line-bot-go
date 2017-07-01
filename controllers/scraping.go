@@ -1,8 +1,8 @@
 package controllers
 
 import (
-	m "../models"
-	l "../libs"
+	m "github.com/rluisr/yukari-line-bot-go/models"
+	l "github.com/rluisr/yukari-line-bot-go/libs"
 )
 
 type HP struct {

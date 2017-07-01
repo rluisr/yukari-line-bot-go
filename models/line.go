@@ -5,8 +5,8 @@ import (
 
 	"github.com/line/line-bot-sdk-go/linebot"
 
-	c "../conf"
-	l "../libs"
+	c "github.com/rluisr/yukari-line-bot-go/conf"
+	l "github.com/rluisr/yukari-line-bot-go/libs"
 )
 
 func CreateInstance() (*linebot.Client){

@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"io"
 
-	c "../conf"
+	c "github.com/rluisr/yukari-line-bot-go/conf"
 )
 
 func CreateRequest(URL string) (io.ReadCloser){

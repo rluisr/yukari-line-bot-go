@@ -4,7 +4,7 @@ import (
 	"time"
 	"runtime"
 
-	cntrlr "./controllers"
+	cntrlr "github.com/rluisr/yukari-line-bot-go/controllers"
 )
 
 func main() {
